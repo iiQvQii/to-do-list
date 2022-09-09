@@ -20,7 +20,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run ng -- deploy --no-silent
+          npm run build
       # 步驟三：部署
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
