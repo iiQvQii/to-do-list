@@ -104,7 +104,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/to-do-list/",
+            "baseHref": "https://iiqvqii.github.io/to-do-list/",
             "name": "iiQvQii",
             "email": "iiqvqii.yen@gmail.com"
           }
