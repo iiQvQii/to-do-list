@@ -1,0 +1,16 @@
+<div class="container">
+  <!-- input -->
+  <div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input [(ngModel)]="model" type="text" placeholder="Title...">
+    <button class="addBtn" (click)="addItem()">Add</button>
+  </div>
+  <!-- list -->
+  <ul id="myUL">
+    <li *ngFor="let list of lists; let i = index" [class.checked]="list.done" (click)="isDone(list)">
+      <span>{{ list.text }}</span>
+      <span class="close" (click)="deleteItem(i)">&#215;</span>
+    </li>
+  </ul>
+
+</div>
